@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Gym Website</title>
+	<link rel="stylesheet" type="text/css" href="GymWeb.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+<style >
+	body{
+		color: white;
+		margin: 0px;
+		padding: 0px;
+		background: url("https://i0.wp.com/goldsgym.in/wp-content/uploads/2023/12/compress-strong-man-training-gym-min-scaled.jpg?resize=1536%2C1024&ssl=1");
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-family: "Pacifico", Tofu;
+	}
+	.left{
+	border: none;
+	display: inline-block;
+position: absolute;
+left: 60px;
+top:20px;
+
+}
+.middle{
+	
+border: none;
+display: block;
+width: 33%;
+margin: 12px auto; 
+}
+.right{
+
+display: inline-block;
+position: absolute;
+right: 34px;
+top:20px;
+border: none;
+}
+.navbar{
+	display: inline-block;
+}
+.navbar li{
+	display: inline-block;
+
+	font-size: 0.95rem;
+
+}
+.navbar li a{
+	color: royalblue;
+	text-decoration: none;
+	
+	
+	margin: 10px;
+}
+.navbar li a:hover,.navbar li a:active{
+	text-decoration:underline;
+	font-size: 17px;
+	color: cyan;
+
+}
+.left div{
+	text-align: center;
+}
+.left img{
+	width: 50px;
+	height: 30px;
+	filter: invert(100%);
+}
+.btn{
+	margin: 0px 9px;
+	color: white;
+	background-color:black;
+	border: none;
+	padding: 4px 14px;
+	border-radius: 5px;
+	border: 2px solid grey;
+	cursor: pointer;
+	font-size: 15px;
+	font-family: "Pacifico", Tofu;
+}
+
+.btn:hover{
+	background-color: grey;
+	color: white;
+	font-size: 16px;
+}
+.container{
+	border: 2px solid blanchedalmond;
+	margin: 106px 80px;
+	padding: 50px;
+	width: 40%;
+	color: white;
+	font-weight: bolder;
+	border-radius: 10px;
+
+}
+.form input{
+
+	text-align: center;
+	display: block;
+	width: 400px;
+	padding: 5px;
+	border: 2px solid black;
+	font-size: 16px;
+	border-radius:5px ;
+	margin:  10px auto;
+	font-family: "Pacifico", Tofu;
+}
+h1{
+	
+	text-align: center;
+}
+.container button{
+	display: block;
+	width: 75%;
+	margin: auto;
+font-family: "Pacifico", Tofu;
+}
+</style>
+</head>
+<body>
+<header class="header">
+	<!-- left for logo-->
+	<div class="left">
+<img src="https://media.istockphoto.com/id/1331186720/vector/dumbbell.jpg?s=612x612&w=0&k=20&c=ztAKf6ZaSrWTBQVW7Nj2yrEbGM0FxitFrze39W-HdMs=" alt="Logo">
+<div>Fitness</div>
+	</div>
+	<!-- middle for nav bar-->
+	<div class="middle">
+		<ul class="navbar">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About US</a></li>
+		<li><a href="#">Fitness Calculator</a></li>
+		<li><a href="#">Contact Us</a></li>
+	</ul>
+	</div>
+	<!-- right for button-->
+	<div class="right">
+		<button class="btn">Call Us Now</button>
+		<button class="btn">Email Us </button>
+	</div>
+</header>
+<div class="container">
+<h1>
+Join in The Gym</h1>
+<form action="noaction.php">
+	<div class="form">
+			<input type="text" name="name" placeholder="Enter Your Name">
+		</div>
+		<div class="form">
+			<input type="number" name="name" placeholder="Enter Your Age" min="18"
+			max="70">
+		</div>
+		<div class="form">
+			<input type="Email" name="name" placeholder="Enter Your Email">
+</div>
+			<div class="form">
+			<input type="text" name="name" placeholder="Enter Your Gender">
+		</div>
+		<div class="form">
+			<input type="text" name="name" placeholder="Enter Your Phone Number">
+		</div>
+<button class="btn">Submit</button>
+	</form>
+</div>
+</body>
+</html>
